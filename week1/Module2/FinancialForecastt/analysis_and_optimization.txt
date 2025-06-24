@@ -1,0 +1,29 @@
+Recursion is a method in programming where a function keeps calling 
+itself to solve smaller parts of a bigger problem. This continues 
+until it reaches a specific stopping point known as the base case. 
+The base case is what prevents the recursion from going on forever.
+
+How recursion helps is that it breaks down a complicated task into 
+smaller and more manageable subproblems. This approach is particularly
+helpful in situations where the problem involves repetitive patterns 
+or steps that can be solved similarly at different levels.
+
+Time Complexity:
+The recursive method used to forecast financial values has a time complexity of O(n), where 'n' represents the number of years we're forecasting. This is because each recursive call reduces the problem by one year, and each step only performs a small amount of work.
+
+Optimization:
+There are better ways to make it more efficient:
+
+Using a loop (iteration):
+Instead of calling the function multiple times, we can use a simple loop to multiply the value each year. This reduces the number of function calls and also saves memory.
+
+Using the direct formula:
+Another approach is to use the standard compound growth formula:
+
+java
+Copy code
+Future Value = Initial Value × (1 + Growth Rate)^n
+This gives us the result in a single step, without
+the need for recursion or even a loop. 
+It’s the most efficient method,
+especially when dealing with large values of 'n'.

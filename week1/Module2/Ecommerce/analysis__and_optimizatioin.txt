@@ -1,0 +1,37 @@
+Step 1: Understanding Asymptotic Notation
+Asymptotic notation, such as Big O notation, is a way to describe how an algorithm performs as the size of the input grows. It helps us evaluate the efficiency of different algorithms by focusing on how quickly they respond to larger datasets, which is especially important when building scalable systems.
+
+Some common time complexities include:
+
+O(1) – Constant time: the operation takes the same time regardless of input size
+
+O(n) – Linear time: performance slows down in direct proportion to input size
+
+O(log n) – Logarithmic time: performance improves by eliminating half the data each step
+
+O(n²) – Quadratic time: often found in algorithms with nested loops
+
+Linear Search:
+Best case: O(1) – the item is found right at the beginning
+
+Average case: O(n) – the item is located somewhere in the middle
+
+Worst case: O(n) – the item is at the end or not present at all
+
+Binary Search (only works with sorted arrays):
+Best case: O(1) – if the middle element is the target
+
+Average/Worst case: O(log n) – the array is halved with every step, which makes it significantly faster for large inputs
+
+Step 4: Analysis
+Linear Search
+
+Time complexity: Best – O(1), Average and Worst – O(n)
+
+It’s simple and doesn’t require sorted data, but it becomes inefficient when dealing with large amounts of data.
+
+Binary Search
+
+Time complexity: Best – O(1), Average/Worst – O(log n)
+
+It’s much faster and more optimized for large datasets, but only works when the data is already sorted.
